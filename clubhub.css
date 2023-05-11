@@ -58,3 +58,47 @@ p{
     display: inline-block;
     vertical-align: top;
 }
+
+@media only screen and (max-width: 1000px){ 
+    .search-bar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 12px;
+        width: 200px;
+        font-size: 18px;
+        border-width: 3px;
+        border-style: solid;
+        border-width: 1px;        
+        border-radius: 10px;        
+        margin-bottom: 12px;
+        display: block;
+    }
+    .hub-preview{
+        width: 900px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .hub-preview2{
+        width: 900px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .foto1{
+        width:950px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover; /* tambien puede ser contain que contiene la img en los parametros de with y height*/
+        object-position: center;/*  tambie puede ser left, right   */
+        display: block;
+    }
+    .foto2{
+        width:950px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover; /* tambien puede ser contain que contiene la img en los parametros de with y height*/
+        object-position: center;/*  tambie puede ser left, right   */
+        display: block;
+    }
+}
