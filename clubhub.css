@@ -26,6 +26,7 @@ p{
     font-family: Roboto,Arial;
     padding-left: 8px;
     font-size: 18px;
+    
 }
 .search-bar{
     padding-top: 10px;
@@ -44,15 +45,17 @@ p{
 }
 .texto-moscu{ 
     margin-top:0;
-    width: 100%;
+    width: 200%;
     font-size: 21px;
-    font-weight: bold;
-
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .ubi-boliche,
 .precio-boliche{
     color: rgb(142, 5, 5);
+    width: 100%;
+    font-size: 16px;
 }
 
 .hub-preview{
