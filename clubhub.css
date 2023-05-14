@@ -86,7 +86,7 @@ p{
     margin-right: 15px;
 }
 .hub-preview2{
-    margin-right: 15px;
+    margin-right: 45px;
     width: 300px;
     display: inline-block;
     vertical-align: top;
@@ -102,7 +102,7 @@ p{
 
 .logo-moscu{
     display: inline-block;
-    width: 50px;    
+    width: 60px;    
     vertical-align: top;
 }
 
@@ -113,6 +113,7 @@ p{
 
 .moscu-row{
     margin-top: 12px;
+    vertical-align: bottom;
 
 }
 
