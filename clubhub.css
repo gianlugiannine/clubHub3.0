@@ -46,6 +46,8 @@ p{
     margin-top:0;
     width: 100%;
     font-size: 21px;
+    font-weight: bold;
+
 }
 
 .ubi-boliche,
@@ -63,21 +65,25 @@ p{
     display: inline-block;
     vertical-align: top;
 }
+
 .moscu-logo-tamanio{
     width: 100%;
     object-fit: cover; 
     object-position: center;
     border-radius: 50px;
 }
+
 .logo-moscu{
     display: inline-block;
     width: 50px;    
     vertical-align: top;
 }
+
 .moscu-info{
     display: inline-block;
     width: 200px;
 }
+
 .moscu-row{
     margin-top: 12px;
 }
