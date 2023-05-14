@@ -116,31 +116,29 @@ p{
 
 }
 
-.buy-button{
-        background-color: rgb(171, 66, 0);
-        color: white;
-        border: none;
-        font-size: 20px;
-        border-style:solid;
-        border-radius: 5px;
-        padding-left: 16px;
-        padding-right: 16px ;
-        padding-top: 8px;
-        padding-bottom: 8px; 
-        cursor: pointer;
-        transition: padding-left 0.5s,
-            padding-right 0.5s,
-            padding-top 0.5s,
-            padding-bottom 0.5s;
-    }
-.buy-button:hover{
+.buy-button {
+    background-color: rgb(213, 45, 45);
+    border-color: rgb(11, 11, 11);
+    border-style: solid;
+    border-width: 1px;
+    color:rgb(244, 244, 244);
+    /* height: 36px;
+    width: 62px; */
+    padding-left: 16px;
+    padding-top: 9px ;
+    border-radius: 8px;
+    padding-bottom: 9px;
+    padding-right: 16px;
+    cursor: pointer;
+    transition: background-color 0.25s,
+        color 0.25s;
+    vertical-align: top;
 
-    padding-left: 40px;
-    padding-right: 40px ;
-    padding-top: 16px;
-    padding-bottom: 16px; 
 }
-
+.buy-button:hover{
+    background-color:  rgb(24, 143, 70) ;
+    color:white ;
+}
 .buy-button:active{
     opacity: 0.7;
 }
@@ -161,6 +159,11 @@ p{
         border-radius: 10px;        
         margin-bottom: 12px;
         display: block;
+    }
+    .logo-moscu{
+        display: inline-block;
+        width: 80px;    
+        vertical-align: top; 
     }
     .moscu-logo-tamanio{
         width: 100%;
