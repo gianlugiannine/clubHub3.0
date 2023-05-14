@@ -119,9 +119,10 @@ p{
 
 .buy-button {
     background-color: rgb(213, 45, 45);
-    border-color: rgb(11, 11, 11);
-    border-style: solid;
-    border-width: 1px;
+    border: none;
+    /* border-color: rgb(11, 11, 11); */
+    /* border-style: solid; */
+    /* border-width: 1px; */
     color:rgb(244, 244, 244);
     /* height: 36px;
     width: 62px; */
