@@ -133,17 +133,17 @@ p{
             padding-top 0.5s,
             padding-bottom 0.5s;
     }
-    .buy-button:hover{
+.buy-button:hover{
 
-        padding-left: 40px;
-        padding-right: 40px ;
-        padding-top: 16px;
-        padding-bottom: 16px; 
-    }
+    padding-left: 40px;
+    padding-right: 40px ;
+    padding-top: 16px;
+    padding-bottom: 16px; 
+}
 
-    .buy-button:active{
-        opacity: 0.7;
-    }
+.buy-button:active{
+    opacity: 0.7;
+}
 
 
 @media only screen and (max-width: 1000px){
@@ -161,6 +161,12 @@ p{
         border-radius: 10px;        
         margin-bottom: 12px;
         display: block;
+    }
+    .moscu-logo-tamanio{
+        width: 100%;
+        object-fit: cover; 
+        object-position: center;
+        border-radius: 50px;
     }
     .hub-preview{
         width: 900px;
