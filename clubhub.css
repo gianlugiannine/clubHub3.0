@@ -1,4 +1,5 @@
 .maincode{
+    background-color: rgb(204, 176, 176);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 20px;
@@ -22,7 +23,7 @@
 }
 
 p{
-    font-family: Arial;
+    font-family: Roboto,Arial;
     padding-left: 8px;
     font-size: 18px;
 }
@@ -41,13 +42,17 @@ p{
     margin-bottom: 12px;
     display: block;
 }
-.texto-moscu{
-    width: 300px;
+.texto-moscu{ 
+    margin-top:0;
+    width: 100%;
+    font-size: 21px;
 }
+
 .ubi-boliche,
 .precio-boliche{
-    color: red;
+    color: rgb(142, 5, 5);
 }
+
 .hub-preview{
     width: 300px;
     display: inline-block;
@@ -58,8 +63,28 @@ p{
     display: inline-block;
     vertical-align: top;
 }
+.moscu-logo-tamanio{
+    width: 100%;
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 50px;
+}
+.logo-moscu{
+    display: inline-block;
+    width: 50px;    
+    vertical-align: top;
+}
+.moscu-info{
+    display: inline-block;
+    width: 200px;
+}
+.moscu-row{
+    margin-top: 12px;
+}
 
-@media only screen and (max-width: 1000px){ 
+
+
+@media only screen and (max-width: 1000px){
     .search-bar{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -86,7 +111,8 @@ p{
         vertical-align: top;
     }
     .foto1{
-        width:950px;
+        width:100%;
+        max-width:100%;
         height: 200px;
         border-radius: 15px;
         object-fit: cover; /* tambien puede ser contain que contiene la img en los parametros de with y height*/
@@ -94,7 +120,8 @@ p{
         display: block;
     }
     .foto2{
-        width:950px;
+        width:100%;
+        max-width:100%;
         height: 200px;
         border-radius: 15px;
         object-fit: cover; /* tambien puede ser contain que contiene la img en los parametros de with y height*/
