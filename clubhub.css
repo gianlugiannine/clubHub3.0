@@ -16,12 +16,13 @@
 }
 .busqueda{
     display: inline-block;
+    margin-left: 400px;
 }
 .titulo1{
     display: inline-block;
 }
 .menutop{
-    margin-left: 15px;
+    margin-left: 100px;
     margin-right: 15px;
     display: inline-block;
 }
@@ -296,6 +297,7 @@ footer{
 
 
 @media only screen and (max-width: 1000px){
+
     .cabezera{
         background-color: rgb(56, 56, 56);
         width: 980px;
@@ -303,6 +305,18 @@ footer{
         margin-bottom: 15px;    
         font-family: Roboto;
     }
+    .busqueda{
+        display: inline-block;
+        margin-left: 100px;
+    }
+    .menutop{
+        margin-left: 50px;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+
+
     .search-bar{
         font-family: Roboto;
         padding-top: 10px;
