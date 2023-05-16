@@ -92,6 +92,13 @@ p{
     vertical-align: top;
     margin-bottom: 80px;
 }
+.hub-preview3{
+    margin-right: 45px;
+    width: 300px;
+    display: block;
+    /* vertical-align: top; */
+    margin-bottom: 80px;
+}
 
 .moscu-logo-tamanio{
     width: 100%;
