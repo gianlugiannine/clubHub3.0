@@ -182,13 +182,69 @@ footer{
     margin-right: 15px;
 
 }
-.social_network_name{
-    color: aqua;
-}
+
+
 .social_network_hyperlink{
     display: inline-block;
     vertical-align: right;
 }
+.formulario{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgb(173, 71, 71);
+    border-radius: 10px;
+    padding-bottom: 12px;
+    padding-top: 8px;
+
+    
+}
+input{
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+    border: none;                
+    font-size: 16px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    width: 400px;
+
+}
+.title{
+    font-size: 40px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+.destino{
+    margin-bottom: 35px;
+}
+.request-button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 16px;
+}
+.schedule-button{
+    border: none;
+    background-color: rgb(222, 221, 221);
+    color: black;
+    font-size: 16px;
+    width: 150px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;              
+}
+
 
 @media only screen and (max-width: 1000px){
     .search-bar{
@@ -255,6 +311,70 @@ footer{
         object-fit: cover;
         object-position: middle;
         display: block;
+    }
+    .formulario{
+        width: 900px;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: rgb(173, 71, 71);
+        border-radius: 10px;
+        padding-bottom: 12px;
+        padding-top: 8px;
+    
+        
+    }
+    input{
+        display: inline-block;
+        background-color: rgb(240, 240, 240);
+        border: none;                
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+        width: 400px;
+    
+    }
+    .title{
+        font-size: 40px;
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+    .destino{
+        margin-bottom: 35px;
+    }
+    .request-button{
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        width: 150px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-right: 16px;
+    }
+    .schedule-button{
+        border: none;
+        background-color: rgb(222, 221, 221);
+        color: black;
+        font-size: 16px;
+        width: 150px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 12px;
+        padding-right: 12px;              
+    }
+    footer{
+        width: 900px;
+        height: 220px;
+        background-color: rgb(102, 53, 53);
+        margin-left: 0;
+        border-radius: 12px;
     }
     
 }
