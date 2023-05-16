@@ -19,12 +19,15 @@
     margin-left: 400px;
 }
 .titulo1{
+    vertical-align: center;
     display: inline-block;
 }
 .menutop{
     margin-left: 100px;
     margin-right: 15px;
     display: inline-block;
+    vertical-align: center;
+
 }
 .opciones{
     display: inline-block;
@@ -100,6 +103,8 @@ p{
     border-radius: 10px;        
     margin-bottom: 12px;
     display: block;*/
+    vertical-align: center;
+
     width: 400px;
     display: inline-block;
     padding-top: 12px;
