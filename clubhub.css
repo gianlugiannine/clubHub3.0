@@ -200,6 +200,7 @@ footer{
 }
 input{
     display: inline-block;
+    border-radius: 5px;
     background-color: rgb(240, 240, 240);
     border: none;                
     font-size: 16px;
@@ -274,14 +275,14 @@ input{
         border-radius: 50px;
     }
     .hub-preview{
-        width: 900px;
+        width: 980px;
         display: inline-block;
         margin-right: 15px;       
         margin-bottom: 40px;
 
     }
     .hub-preview2{
-        width: 900px;
+        width: 980px;
         display: inline-block;
         vertical-align: top;
     }
@@ -313,7 +314,7 @@ input{
         display: block;
     }
     .formulario{
-        width: 900px;
+        width: 980px;
         text-align: center;
         margin-bottom: 30px;
         background-color: rgb(173, 71, 71);
@@ -324,6 +325,7 @@ input{
         
     }
     input{
+        text-align: center;
         display: inline-block;
         background-color: rgb(240, 240, 240);
         border: none;                
@@ -336,41 +338,14 @@ input{
         padding-right: 40px;
         font-size: 16px;
         width: 400px;
-    
     }
-    .title{
-        font-size: 40px;
-        margin-top: 14px;
-        margin-bottom: 0;
-    }
-    .destino{
-        margin-bottom: 35px;
-    }
-    .request-button{
-        border: none;
-        background-color: black;
-        color: white;
-        font-size: 16px;
-        width: 150px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 12px;
-        padding-right: 12px;
-        margin-right: 16px;
-    }
-    .schedule-button{
-        border: none;
-        background-color: rgb(222, 221, 221);
-        color: black;
-        font-size: 16px;
-        width: 150px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 12px;
-        padding-right: 12px;              
-    }
-    footer{
+    .datosinfo{
         width: 900px;
+        display: inline-block;
+    }
+    
+    footer{
+        width: 980px;
         height: 220px;
         background-color: rgb(102, 53, 53);
         margin-left: 0;
