@@ -27,6 +27,7 @@
 
 .titulo1{
     align-items: center;
+    justify-items: end;
     vertical-align: center;
 }
 .menutop{
