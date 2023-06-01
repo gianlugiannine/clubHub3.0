@@ -1,5 +1,5 @@
 .maincode{
-    background-color: rgb(204, 176, 176);
+    background-color: rgb(59, 57, 57);
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
@@ -8,7 +8,7 @@
 /* styles.css */
 .cabezera{
     margin-top: 8px;    
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(145, 143, 143);
     width: 100%;
     border-radius: 10px;
     margin-bottom: 25px;    
@@ -127,7 +127,7 @@ p{
 
 .ubi-boliche,
 .precio-boliche{
-    color: rgb(142, 5, 5);
+    color: rgb(214, 214, 214);
     width: 100%;
     font-size: 16px;
 }
@@ -178,35 +178,104 @@ p{
 }
 
 .buy-button {
-    background-color: rgb(213, 45, 45);
-    border: none;
-    /* border-color: rgb(11, 11, 11); */
-    /* border-style: solid; */
-    /* border-width: 1px; */
-    color:rgb(244, 244, 244);
-    /* height: 36px;
-    width: 62px; */
-    margin-top: 30px;
-    font-weight: bold;
-    padding-left: 16px;
-    padding-top: 9px ;
-    border-radius: 8px;
-    padding-bottom: 9px;
-    padding-right: 16px;
+    position: relative;
+    padding: 1em 1.8em;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #ae00ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.25s,
-        color 0.25s;
-    vertical-align: top;
-    transition: opacity 0.25s;
+    font-weight: bold;
+
 
 }
 .buy-button:hover{
-    background-color:  rgb(24, 143, 70) ;
-    color:white ;
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.6s;
 }
-.buy-button:active{
-    opacity: 0.7;
+   
+
+.buy-button span {
+    position: absolute;
 }
+   
+.buy-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae00ff);
+   }
+   
+.buy-button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.7s;
+   }
+   
+.buy-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #001eff);
+   }
+   
+.buy-button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.7s;
+    transition-delay: 0.35s;
+   }
+   
+.buy-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae00ff);
+   }
+   
+.buy-button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.7s;
+    transition-delay: 0.17s;
+   }
+   
+.buy-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #001eff);
+   }
+   
+.buy-button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.7s;
+    transition-delay: 0.52s;
+   }
+   
+.buy-button:active {
+    background: #ae00af;
+    background: linear-gradient(to top right, #ae00af, #001eff);
+    color: #bfbfbf;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    transition: 0.1s;
+   }
+   
+.buy-button:active span:nth-child(1) 
+   span:nth-child(2) 
+   span:nth-child(2) 
+   span:nth-child(2) {
+    transition: none;
+    transition-delay: none;
+   }
+   
 
 footer{
     width: 100%;
@@ -311,6 +380,7 @@ footer{
     object-position: center;
     border-radius: 14px;
 }
+
 
 @media only screen and (max-width: 1000px){
     .boliches-grid{
