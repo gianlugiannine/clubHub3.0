@@ -1,5 +1,9 @@
 .maincode{
-    background-color: rgb(59, 57, 57);
+    background-image: url('fondo3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: rgb(59, 57, 57); */
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
@@ -420,7 +424,7 @@ iframe{
         height: 130px;
         background-color: rgb(139, 136, 136);
         width: 980px;
-        font-size: 22px;
+        font-size: 18px;
         border-radius: 10px;
         margin-bottom: 15px;    
         font-family: Roboto;
