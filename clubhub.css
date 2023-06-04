@@ -417,8 +417,10 @@ iframe{
     
     }
     .cabezera{
+        height: 130px;
         background-color: rgb(139, 136, 136);
         width: 980px;
+        font-size: 22px;
         border-radius: 10px;
         margin-bottom: 15px;    
         font-family: Roboto;
