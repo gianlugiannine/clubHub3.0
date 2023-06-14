@@ -8,6 +8,10 @@
     margin-right: 0;
 }
 .cabezera{
+    position:sticky;
+    position: top;
+    top: 0;
+    z-index: 1000;
     margin-top: 2px;
     width: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
