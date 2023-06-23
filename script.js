@@ -1,10 +1,10 @@
 var edad = 0; 
 
 while (edad < 18) {
-  edad = prompt("¿Cuál es tu edad?");
+  edad = prompt("Ingresa tu edad a continuacion para acceder al sitio:");
   
   if (edad >= 18) {
-    alert("Bienvenido/a al sitio web. ¡Disfruta tu visita!");
+    alert("Bienvenido/a CLUBHUB. ¡Disfruta la Fiesta!");
   } else {
     alert("Lo siento, el acceso está denegado.");
   }
