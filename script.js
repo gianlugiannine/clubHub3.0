@@ -1,15 +1,27 @@
-var edad = 0; 
 
-while (edad < 18) {
-  edad = prompt("Ingresa tu edad a continuacion para acceder al sitio:");
+function verificarEdad() {
+    var edadIngresada = localStorage.getItem("edad");
   
-  if (edad >= 18) {
-    alert("Bienvenido/a CLUBHUB. ¡Disfruta la Fiesta!");
-  } else {
-    alert("Lo siento, el acceso está denegado.");
+    if (edadIngresada) {
+      mostrarBienvenida();
+    } else {
+      var edad = prompt("Por favor, ingresa tu edad:");
+  
+      if (edad && edad >= 18) {
+        localStorage.setItem("edad", edad);
+        mostrarBienvenida();
+      } else {
+        alert("Lo siento, debes tener al menos 18 años para ingresar a ClubHub.");
+        window.location.href = "https://www.otrasitio.com";
+      }
+    }
   }
-}
-
+  
+  function mostrarBienvenida() {
+    alert("¡Bienvenido a ClubHub! Disfruta de la fiesta.");
+  }
+  
+  verificarEdad();
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
