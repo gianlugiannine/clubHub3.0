@@ -1,31 +1,14 @@
+var edad = 0; 
 
-var mensaje1 = "Hola";
-var mensaje2 = " Mundo";
-var mensaje = mensaje1 + mensaje2; 
-
-document.write(mensaje);
-
-
-function checkAge(age) {
-    if (age >= 18) {
-      return true;
-    } 
-    else {
-      return confirm('Acceso denegado. Su edad debe ser 18');
-    }
-
-  }
+while (edad < 18) {
+  edad = prompt("¿Cuál es tu edad?");
   
-  let age = prompt('Ingresa tu edad a continuacion', 18);
-  
-  if ( checkAge(age) ) {
-    alert( 'Acceso permitido, Disfruta de la fiesta!' );
-  } 
-  else {
-    alert( 'Acceso denegado. Su edad debe ser 18' );
+  if (edad >= 18) {
+    alert("Bienvenido/a al sitio web. ¡Disfruta tu visita!");
+  } else {
+    alert("Lo siento, el acceso está denegado.");
   }
-
-
+}
 
 
 const navToggle = document.querySelector(".nav-toggle");
