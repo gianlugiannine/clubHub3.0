@@ -125,6 +125,7 @@
     }
   
     .nav-menu {
+        opacity: 0.9;
       flex-direction: column;
       align-items: center;
       margin: 0;
@@ -134,7 +135,7 @@
       width: 100%;
       padding: 20px 0;
   
-      height: calc(100% - 60px);
+      height: calc(100% - 1300px);
       overflow-y: auto;
   
       left: 100%;
@@ -143,6 +144,7 @@
   
     .nav-menu-item {
       line-height: 70px;
+      font-size: 25px ;
     }
   
     .nav-menu-link:hover,
