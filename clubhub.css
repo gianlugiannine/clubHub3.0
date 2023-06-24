@@ -285,6 +285,7 @@ p{
     text-align: center;
     cursor: pointer;
     transition: 0.2s;
+
 }
 .servicio-info:hover{
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
@@ -295,7 +296,18 @@ p{
     object-fit: contain;
     height: 150px;
     padding-top: 12px;
+    margin-bottom: 22px;
 }
+.formulario-servicios{
+    margin-top: 150px;
+}
+.venta-texto{
+    font-size: 25px;
+    line-height: 5px;
+
+ 
+}
+
 .buy-button {
     position: relative;
     padding: 1em 1.8em;
@@ -636,6 +648,20 @@ iframe{
         background-color: rgb(102, 53, 53);
         margin-left: 0;
         border-radius: 12px;
+    }
+    .servicios-grid{
+        margin: 100px 15px;
+    }
+    .venta-texto{
+        font-size: 25px;
+    }
+    .venta-texto{
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .texto-cada-servicio{
+        font-size: 15px;
+        line-height: 18px;
     }
     
 }
