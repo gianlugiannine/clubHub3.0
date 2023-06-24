@@ -262,6 +262,26 @@ p{
     column-gap: 20px;
     row-gap: 20px;
 }
+
+.contacto-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+.iconos-contacto{
+    width: 80px;
+
+}
+.cubo-redes{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+}
+
 .servicios-grid{
     margin: 50px 15px;
     height: 300px;;
@@ -277,8 +297,8 @@ p{
     height: 100%;
     padding: 10px;
     border-radius: 15px;
-    background-color: #212121;
-    color: #fff;
+    background-color: #531861;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -289,7 +309,7 @@ p{
 }
 .servicio-info:hover{
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 .ticket-logo{
     border-radius: 10px;
@@ -650,6 +670,9 @@ iframe{
         border-radius: 12px;
     }
     .servicios-grid{
+        margin: 100px 15px;
+    }
+    .contacto-grid{
         margin: 100px 15px;
     }
     .venta-texto{
