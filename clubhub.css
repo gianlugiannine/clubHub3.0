@@ -273,15 +273,60 @@ p{
 }
 .iconos-contacto{
     width: 80px;
+    margin:20px 99px;
+
 
 }
-.cubo-redes{
-        display: flex;
+.contact-flex{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
-}
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 12px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #782c8b;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 120px;
+    width: 80%;
 
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-flex:hover{
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+    transition-delay: 0.3s;
+}
+.cubo-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+    
+}
+.texto-redes-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-right: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(255, 254, 254);
+    text-underline-offset: none;
+    align-items: center;
+}
 .servicios-grid{
     margin: 50px 15px;
     height: 300px;;
@@ -675,6 +720,19 @@ iframe{
     .contacto-grid{
         margin: 100px 15px;
     }
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .contact-flex{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 50px;
+        line-height: 30px;
+
+    }
     .venta-texto{
         font-size: 25px;
     }
@@ -686,5 +744,15 @@ iframe{
         font-size: 15px;
         line-height: 18px;
     }
+    .texto-contacto-mobil{
+        font-size: 23px;
+    }
+    
+    .iconos-contacto{
+        width: 50px;
+    }
+
+        
+    
     
 }
