@@ -315,6 +315,71 @@ p{
     justify-content: space-between
     
 }
+/*  */
+.card {
+    width: 260px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .chat-window {
+    height: 220px;
+    overflow-y: scroll;
+  }
+  
+  .message-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .message-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .send-button {
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+  .chat-ayuda-cotacto{
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+  }
+/*  */
 .texto-redes-contacto{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
@@ -364,6 +429,9 @@ p{
     margin-bottom: 22px;
 }
 .formulario-servicios{
+    margin-top: 150px;
+}
+.formulario-contacto{
     margin-top: 150px;
 }
 .venta-texto{
@@ -687,6 +755,9 @@ iframe{
     
         
     }
+    .formulario-contacto{
+        margin-top: 250px;
+    }
     .destino{
         text-align: center;
         display: inline-block;
@@ -715,10 +786,17 @@ iframe{
         border-radius: 12px;
     }
     .servicios-grid{
-        margin: 100px 15px;
+        margin: 200px 15px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        column-gap: 40px;
+        row-gap: 50px;
     }
     .contacto-grid{
         margin: 100px 15px;
+    }
+    .formulario-servicios{
+        margin-top: 1000px;
     }
     .contact-info{
         display: flex;
@@ -729,10 +807,11 @@ iframe{
         display: flex;
         flex-direction: row;
         width: 90%;
-        margin-left: 50px;
+        margin-left: 40px;
         line-height: 30px;
 
     }
+
     .venta-texto{
         font-size: 25px;
     }
@@ -750,6 +829,9 @@ iframe{
     
     .iconos-contacto{
         width: 50px;
+    }
+    .main-contactos{
+        margin-top: 200px;
     }
 
         
