@@ -421,6 +421,7 @@ p{
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
     transition-delay: 0.3s;
 }
+/*  */
 .ticket-logo{
     border-radius: 10px;
     object-fit: contain;
@@ -437,10 +438,94 @@ p{
 .venta-texto{
     font-size: 25px;
     line-height: 5px;
-
- 
 }
+/* pago */
+.trajeta-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 260px;
+    padding: 20px 1px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  }
+  .pago-grid{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+  
+  .contenido-pago {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: space-between;
+    column-gap: 100px;
+    line-height: 39px;
 
+
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .contenido-pago .precio-pago {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+  
+  .contcontenidoent .descripcion-pago {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .contenido .titulo-pago {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .boton-pago {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+  }
+  
+  
+/*  */
+.pago-info{
+    height: 400px;
+ 
+
+}
 .buy-button {
     position: relative;
     padding: 1em 1.8em;
@@ -790,7 +875,7 @@ iframe{
         display: grid;
         grid-template-columns: 1fr ;
         column-gap: 40px;
-        row-gap: 50px;
+        row-gap: 80px;
     }
     .contacto-grid{
         margin: 100px 15px;
@@ -832,6 +917,17 @@ iframe{
     }
     .main-contactos{
         margin-top: 200px;
+    }
+    .formulario-pago{
+        margin-top: 1200px;
+    }
+    .pago-info{
+        align-items: center;
+        justify-content: center;
+    }
+    .pago-grid{
+        width: 40%;
+        margin-left: 30%;
     }
 
         
