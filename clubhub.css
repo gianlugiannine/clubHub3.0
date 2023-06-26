@@ -864,7 +864,6 @@ iframe{
         width: 980px;
         text-align: center;
         margin-bottom: 30px;
-        background-color: rgb(173, 71, 71);
         border-radius: 10px;
         padding-bottom: 12px;
         padding-top: 8px;
@@ -897,7 +896,6 @@ iframe{
     footer{
         width: 980px;
         height: 220px;
-        background-color: rgb(102, 53, 53);
         margin-left: 0;
         border-radius: 12px;
     }
