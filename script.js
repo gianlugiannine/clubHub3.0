@@ -37,16 +37,40 @@ navToggle.addEventListener("click", () => {
 });
 
 
-// verifica que en el footer se haya ingresado un email valido
-function validarEmail() {
-    var email = document.getElementById("email").value;
-    var mensaje = document.getElementById("mensaje");
-    
-    if (email.indexOf("@") > -1) {
-        mensaje.innerText = "Gracias por suscribirte";
-        mensaje.classList.add("mensaje-exito");
-    } else {
-        mensaje.innerText = "Por favor, ingresa un email valido";
-        mensaje.classList.add("mensaje-error");
-    }
-    }
+
+var carrito = [];
+
+function agregarAlCarrito(precio) {
+  carrito.push(precio);
+  actualizarCarrito();
+}
+
+function eliminarDelCarrito(index) {
+  carrito.splice(index, 1);
+  actualizarCarrito();
+}
+
+function actualizarCarrito() {
+  var carritoElement = document.getElementById("carrito");
+  carritoElement.innerHTML = "";
+
+  for (var i = 0; i < carrito.length; i++) {
+    var producto = carrito[i];
+    var li = document.createElement("li");
+    li.innerHTML = "Producto " + (i + 1) + " - $" + producto;
+    var button = document.createElement("button");
+    button.innerHTML = "Eliminar";
+    button.onclick = (function (index) {
+      return function () {
+        eliminarDelCarrito(index);
+      };
+    })(i);
+    li.appendChild(button);
+    carritoElement.appendChild(li);
+  }
+}
+
+function vaciarCarrito() {
+  carrito = [];
+  actualizarCarrito();
+}
