@@ -710,7 +710,17 @@ footer{
 
     
 }
-
+.titulo-mediopago{
+    padding-top: 18px;
+}
+.tipo-de-factura{
+    margin-top: 30px;
+    height: 50px;
+    margin-bottom: 80px;
+}
+.formulario-mediopago{
+    margin-top: 300px;
+}
 .destino{
     display: inline-block;
     border-radius: 5px;
@@ -792,6 +802,13 @@ iframe{
     margin-top: 10px;
     width: 100%;
 }
+.factura-logo{
+    width: 150px;
+    margin-left: 33%;
+}
+.titulo-mediopago{
+    margin-top: 40%;
+}
 
 @media only screen and (max-width: 1300px){
     .boliches-grid{
@@ -822,6 +839,10 @@ iframe{
         margin-top: 12px;
         vertical-align: bottom;
     
+    }
+    .factura-logo{
+        width: 150px;
+        margin-left: 42%;
     }
 
     .logo-moscu{
@@ -992,6 +1013,9 @@ iframe{
         margin-top: 10px;
         margin-left: 0px;
     }
-    
+    .titulo-mediopago{
+        margin-top: 0;
+        padding-top: 40px;
+    }
     
 }
