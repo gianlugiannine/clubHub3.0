@@ -52,9 +52,7 @@
                             </div>
                         </div>
                         
-                        <button onclick="agregarAlCarrito(1.99)" class="buy-button">
-                            Buy now
-                        </button>
+                        <button onclick="agregarProducto(1.99)" class="buy-button">Buy now</button>
                     </div>
                 </div>
                 <div class="servicio-info pago-info">
@@ -64,9 +62,7 @@
                           <div class="precio-pago">$5.99</div>
                           <div class="descripcion-pago">Premium: Acceso completo, eventos exclusivos, descuentos</div>
                         </div>
-                        <button onclick="agregarAlCarrito(5.99)" class="buy-button">
-                            Buy now
-                          </button>
+                        <button onclick="agregarProducto(5.99)" class="buy-button">Buy now</button>
                     </div>
                 </div>
                 <div class="servicio-info pago-info">
@@ -77,9 +73,7 @@
                           <div class="descripcion-pago">VIP: Experiencia de fiesta de lujo, entrada rápida, servicios personalizados.
                         </div>
                         </div>
-                        <button onclick="agregarAlCarrito(9.99)"  onclick="elegirPrecio()"class="buy-button">
-                            Buy now
-                        </button>
+                        <button onclick="agregarProducto(9.99)" class="buy-button">Buy now</button>
                     </div>
                 </div>
                 <div class="servicio-info pago-info">
@@ -87,8 +81,13 @@
                         <h2 class="titulo-carito">Carrito de compras</h2>
                         <img class="logo-carrito" src="carrito-icono.png" alt="">
                     </div>
-                    <ul class="lista-carrito" id="carrito"></ul>                          
-                    <button  class="buy-button" onclick="vaciarCarrito()">Vaciar carrito</button>
+                    <ul class="lista-carrito" id="carrito"></ul>
+                    <button class="buy-button" onclick="vaciarCarrito()">Vaciar carrito</button>
+                    <a style="text-decoration: none;" href="./medio_pago.html" >
+                        <button class="buy-button check-out" onclick="vaciarCarrito()">check-out</button>
+                    </a>
+                    <!-- <ul class="lista-carrito" id="carrito"></ul> -->
+                    <p id="mensaje-error" style="color: red; display: none; font-weight: bold; font-size: 20px;">Solo se puede agregar un producto al carrito</p>
                 </div>
             </div>
 

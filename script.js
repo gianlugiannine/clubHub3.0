@@ -1,27 +1,5 @@
 
-// function verificarEdad() {
-//     var edadIngresada = localStorage.getItem("edad");
-  
-//     if (edadIngresada) {
-//       mostrarBienvenida();
-//     } else {
-//       var edad = prompt("Por favor, ingresa tu edad:");
-  
-//       if (edad && edad >= 18) {
-//         localStorage.setItem("edad", edad);
-//         mostrarBienvenida();
-//       } else {
-//         alert("Lo siento, debes tener al menos 18 años para ingresar a ClubHub.");
-//         window.location.href = "https://www.otrasitio.com";
-//       }
-//     }
-//   }
-  
-//   function mostrarBienvenida() {
-//     alert("¡Bienvenido a ClubHub! Disfruta de la fiesta.");
-//   }
-  
-//   verificarEdad();
+
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
@@ -38,39 +16,55 @@ navToggle.addEventListener("click", () => {
 
 
 
-var carrito = [];
+const buyButtons = document.querySelectorAll('.buy-button');
+const carrito = document.getElementById('carrito');
+const mensajeError = document.getElementById('mensaje-error');
+const vaciarCarritoButton = document.getElementById('vaciar-carrito');
+const checkOutButton = document.querySelector('.check-out');
 
-function agregarAlCarrito(precio) {
-  carrito.push(precio);
-  actualizarCarrito();
-}
+let productoAgregado = false;
 
-function eliminarDelCarrito(index) {
-  carrito.splice(index, 1);
-  actualizarCarrito();
-}
+function agregarProducto(precio) {
+  if (!productoAgregado) {
+    const producto = document.createElement('li');
+    producto.textContent = `Producto seleccionado: $${precio}`;
+    
+    carrito.appendChild(producto);
 
-function actualizarCarrito() {
-  var carritoElement = document.getElementById("carrito");
-  carritoElement.innerHTML = "";
+    productoAgregado = true;
 
-  for (var i = 0; i < carrito.length; i++) {
-    var producto = carrito[i];
-    var li = document.createElement("li");
-    li.innerHTML = "Producto " + (i + 1) + " - $" + producto;
-    var button = document.createElement("button");
-    button.innerHTML = "Eliminar";
-    button.onclick = (function (index) {
-      return function () {
-        eliminarDelCarrito(index);
-      };
-    })(i);
-    li.appendChild(button);
-    carritoElement.appendChild(li);
+    if (mensajeError) {
+      mensajeError.style.display = 'none';
+    }
+    
+    actualizarBotonCheckOut();
+  } else {
+    if (mensajeError) {
+      mensajeError.style.display = 'block';
+    }
   }
 }
 
 function vaciarCarrito() {
-  carrito = [];
-  actualizarCarrito();
+  carrito.innerHTML = '';
+  productoAgregado = false;
+
+  actualizarBotonCheckOut();
 }
+
+function actualizarBotonCheckOut() {
+  if (productoAgregado) {
+    checkOutButton.style.display = 'block';
+  } else {
+    checkOutButton.style.display = 'none';
+  }
+}
+checkOutButton.style.display = 'none';
+function actualizarBotonCheckOut() {
+  if (productoAgregado && carrito.childElementCount > 0) {
+    checkOutButton.style.display = 'block';
+  } else {
+    checkOutButton.style.display = 'none';
+  }
+}
+

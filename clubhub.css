@@ -788,6 +788,11 @@ iframe{
     border-radius: 30px;
     justify-items: end;
 }
+.check-out{
+    margin-top: 10px;
+    width: 100%;
+}
+
 @media only screen and (max-width: 1300px){
     .boliches-grid{
         display: grid;
@@ -983,7 +988,10 @@ iframe{
         margin-top: 150px;
  
     }
-        
+    .check-out{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
     
     
 }
